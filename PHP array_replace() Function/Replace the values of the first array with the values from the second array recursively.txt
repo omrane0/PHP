@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$a1=array("a"=>array("red"),"b"=>array("green","blue"),);
+$a2=array("a"=>array("yellow"),"b"=>array("black"));
+print_r(array_replace_recursive($a1,$a2));
+?>
+
+</body>
+</html>
+
+
+
+
+
+Array ( [a] => Array ( [0] => yellow ) [b] => Array ( [0] => black [1] => blue ) )
